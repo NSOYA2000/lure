@@ -1,0 +1,7 @@
+com/lurefish/controller/FishController.class
+com/lurefish/repository/FishRepository.class
+com/lurefish/LureFishApplication.class
+com/lurefish/config/DataInitializer.class
+com/lurefish/model/Fish.class
+com/lurefish/service/impl/FishServiceImpl.class
+com/lurefish/service/FishService.class

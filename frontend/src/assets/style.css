@@ -1,0 +1,187 @@
+/* 路亚鱼种百科 - 自定义样式 */
+
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 导航栏样式 */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-brand i {
+    margin-right: 8px;
+}
+
+/* Hero区域 */
+.hero-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-bottom: 1px solid #dee2e6;
+}
+
+.hero-section h1 {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* 鱼种卡片样式 */
+.fish-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.fish-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.fish-card .card-img-top {
+    height: 200px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.fish-card .card-body {
+    padding: 1.5rem;
+}
+
+.fish-card .card-title {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.fish-card .badge {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+}
+
+/* 标签样式 */
+.bg-water {
+    background-color: #0dcaf0 !important;
+}
+
+.bg-season {
+    background-color: #ffc107 !important;
+    color: #000 !important;
+}
+
+.bg-difficulty {
+    background-color: #6f42c1 !important;
+}
+
+/* 模态框样式 */
+.modal-content {
+    border-radius: 12px;
+    border: none;
+}
+
+.modal-header {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 12px 12px 0 0;
+    padding: 1.5rem;
+}
+
+.modal-header .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+/* 技巧列表样式 */
+.tips-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tips-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.tips-list li:last-child {
+    border-bottom: none;
+}
+
+.tips-list i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+/* 页脚样式 */
+footer {
+    margin-top: auto;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .fish-card .card-img-top {
+        height: 180px;
+    }
+}
+
+/* 加载动画 */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* 管理页面特定样式 */
+.admin-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.admin-card {
+    border-left: 4px solid var(--primary-color);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.btn-save {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+    color: white;
+}
+
+.btn-save:hover {
+    background-color: #157347;
+    border-color: #146c43;
+}
+
+/* 空状态样式 */
+.empty-state {
+    padding: 4rem 1rem;
+    text-align: center;
+    color: #6c757d;
+}
+
+.empty-state i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #dee2e6;
+}

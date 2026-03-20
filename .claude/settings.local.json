@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -c /Users/soya/Desktop/lure-fish-website/js/admin.js)",
+      "Bash(node -c /Users/soya/Desktop/lure-fish-website/js/app.js)",
+      "Bash(java -version)",
+      "Bash(brew install:*)",
+      "Bash(brew info:*)",
+      "Bash(bash -c 'export PATH=\"\"/opt/homebrew/opt/openjdk/bin:$PATH\"\"; java -version')",
+      "Bash(sudo ln:*)",
+      "Bash(bash -c 'source ~/.zshrc; java -version')",
+      "Bash(bash -c 'source ~/.zshrc; which java')",
+      "Bash(mvn spring-boot:run)",
+      "Bash(mvn clean:*)",
+      "WebSearch",
+      "Bash(mvn spring-boot:run -DskipTests)"
+    ]
+  }
+}
